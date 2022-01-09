@@ -1,15 +1,15 @@
-import {useState} from 'react';
+
 //import { HashRouter as Router, Route, Switch} from 'react-router-dom';
 import { BrowserRouter,
   Routes,
   Route,
   Link} from 'react-router-dom';
 
-import Home from '../routes/Home';
-import Auth from '../routes/Auth';
+import Home from 'routes/Home';
+import Auth from 'routes/Auth';
 
-const AppRouter = () => {
-  const [isLoggenIn, setIsLoggenInS] = useState(true)
+const AppRouter = ({ isLoggenIn}) => {
+
   return (
     <BrowserRouter>
     <Routes>
